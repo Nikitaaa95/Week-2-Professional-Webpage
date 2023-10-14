@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Professional Webpage</title>
-    <link rel="stylesheet" href="/Users/nikitathomas/bootcamp/Homework/Week-2-Personal-Webpage/assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
@@ -13,35 +13,30 @@
         <h1>Nikita M. Thomas</h1>
         <ul id="section-links"></ul>
         <li class="section">
-            <a href="linktosection" class="About me">About Me</a>
+            <a href="linktosection" class="About-me">About Me</a>
         </li>
         <li class="section">
             <a href="linktosection" class="Work">Work</a>
         </li>
         <li class="section">
-            <a href="linktosection" class="Contact Me">Contact Me</a>
+            <a href="linktosection" class="Contact-Me">Contact Me</a>
         </li>
         <li class="section">
             <a href="linktosection" class="Resume">Resume</a>
         </li>
       </header>
 
-      <section class="lesson">
-        <h2>Image and Link Attributes</h2>
-        <h4>are used to configure or adjust behavior of specific elements</h4>
-        <!-- The src attribute is used with <img> to specify an absolute or relative path to an image -->
-        <!-- The alt attribute specifies the alternative text for an image -->
-        <img src="https://via.placeholder.com/200" alt="placeholder image"/>
-        <br>
-        <img src="./assets/images/sample.jpg" alt="placeholder image"/>
-        <br>
-        <!-- The href attribute is used with <a> to specify a URL-->
-        <a href="https://www.google.com">This is a link to Google.com</a>
+      <section class="section-about-me">
+        <h2>About Me</h2>
+        <p> <!-- Paragraph about self to be included --> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </p>
       </section>
 
       <!-- A class is used to identify one or more elements-->
-      <section class="lesson">
-        <h2>Global Attributes</h2>
+      <section class="section-work">
+        <h2>Work</h2>
         <h3>can be used on any element and are often used to identify element for styling</h3>
         <!--An id is an unique identifier to identify a single element-->
         <p id="paragraph-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -49,6 +44,25 @@
         <p id="paragraph-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         <br>
       </section>
+
+      <section class="section-contact-me">
+        <h2>Contact Me</h2>
+            <ul id="contactme-links"></ul>
+            <li class="section">
+                <a class="phone-number">510-378-2656</a>
+            </li>
+            <li class="section">
+                <a href="link to open email" class="email">nikitamthomas@gmail.com</a>
+            </li>
+            <li class="section">
+                <a href="link to Github" class="Github">Github</a>
+            </li>
+            <li class="section">
+                <a href="https://www.linkedin.com/in/nikita-thomas-34b9a153/" class="linkedin">LinkedIn</a>
+            </li>
+    
+      </section>
+      
 
     </div>
   </body>
