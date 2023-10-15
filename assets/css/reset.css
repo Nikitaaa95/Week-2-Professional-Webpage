@@ -1,0 +1,12 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --green: rgb(116, 187, 148);
+    --darkbrown: rgb(133, 90, 33);
+    --brown: #ead0a5;
+  }
+
+a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}

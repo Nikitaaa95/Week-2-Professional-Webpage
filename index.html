@@ -4,39 +4,48 @@
   <head>
     <meta charset="UTF-8">
     <title>Professional Webpage</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+   <style>
+   .reset-style, .reset-style * {
+        all: revert;
+        </style>
   </head>
 
   <body>
     <div class="header">      
         <h1>Nikita M. Thomas</h1>
         <div>
-        <ul id="section-links">
+        <ul class "reset-style" id="section-links">
         <link class="section">
-            <a href="linktosection" class="About-me">About Me</a>
+            <a href="about-me" class="About-me">About Me</a>
         </link>
         <link class="section">
-            <a href="linktosection" class="Work">Work</a>
+            <a href="work" class="Work">Work</a>
         </link>
         <link class="section">
-            <a href="linktosection" class="Contact-Me">Contact Me</a>
+            <a href="contact-me" class="Contact-Me">Contact Me</a>
         </link>
         <link class="section">
-            <a href="linktosection" class="Resume">Resume</a>
+            <a href="/Users/nikitathomas/bootcamp/Homework/Week-2-Personal-Webpage/assets/documentation/Resume - Corporate.pdf" class="Resume">Resume</a>
         </link>
     </ul>
     </div>
     </div>
       </header>
 
-      <section class="section-about-me">
+      <div class="hero">
+        <div-title="<img src="" alt="ivy covered wall"></div-title>
+    </div>
+
+      <section class="section-about-me" id="about-me">
         <h2>About Me</h2>
         <p> <!-- Paragraph about self to be included --> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </section>
 
-      <section class="section-work">
+      <section class="section-work" id="work">
         <h2>Work</h2>
         <section navbar
         <article class="student-image" href="assets/images/student.jpeg"></article>
@@ -47,7 +56,7 @@
 
       </section>
 
-      <section class="section-contact-me">
+      <section class="section-contact-me" id="contact-me">
         <h2>Contact Me</h2>
             <ul id="contactme-links"></ul>
             <li class="section">
