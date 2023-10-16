@@ -49,6 +49,11 @@ body {
     font-family: 'Georgia', sans-serif;
 }
 
+h2 {
+    color: var(--darkbrown);
+    text-decoration: underline;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
