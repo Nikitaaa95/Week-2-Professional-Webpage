@@ -138,6 +138,10 @@ h2 {
     color: var(--green)
 }
 
+.project img:hover {
+    opacity: .8;
+  }
+
 @media screen and (max-width: 768px) {
     .wrapper {
         display: grid;
@@ -198,3 +202,4 @@ h2 {
         color: var(--green)
     }
   }
+
