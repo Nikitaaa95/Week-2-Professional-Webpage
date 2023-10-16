@@ -142,6 +142,19 @@ h2 {
     opacity: .8;
   }
 
+  #project {
+    position: relative;
+  }
+  
+  #caption {
+    position: absolute;
+    bottom: 75px;
+    left: 15px;
+    background: var(--darkbrown);
+    color: var(--green);
+    font-size: 30px;
+  }
+
 @media screen and (max-width: 768px) {
     .wrapper {
         display: grid;
@@ -203,3 +216,4 @@ h2 {
     }
   }
 
+  

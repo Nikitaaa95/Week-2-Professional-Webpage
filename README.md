@@ -26,4 +26,7 @@ Construction Page
 https://loriballen.com/under-construction-page/
 
 Phone Links
-https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text=Adding%20an%20HTML%20Phone%20Number%20Call%20Link%20to%20your%20Website,-Add%20the%20code&text=Href%3Dtel%3A%20creates%20the%20call,the%20number%20it%20will%20call.
+https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text=Adding%20an%20HTML%20Phone%20Number%20Call%20Link%20to%20your%20Website,-Add%20the%20code&text=Href%3Dtel%3A%20creates%20the%20call,the%20number%20it%20will%20call
+
+Opacity Effect
+https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
