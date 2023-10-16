@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 5 5 5;
 }
 
 .header {
@@ -65,68 +65,70 @@ h2 {
 }
 
 .about-me {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .text-about-me {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 2/6;
+    grid-row: 1/2;
 }
 
 .work {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-column: 1/2;
+    grid-row: 2/5;
 }
 
 .student {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-column: 2/6;
+    grid-row: 2/3;
+}
+
+.horiseon {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.puppy {
+    grid-column: 4/6;
+    grid-row: 3/4;
+}
+
+.books {
+    grid-column: 2/4;
+    grid-row:4/5;
+}
+
+.photography {
+    grid-column:4/6;
+    grid-row:4/5;
 }
 
 .contact-me {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column: 1/2;
+    grid-row: 5/6;
 }
 
 .phone {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column: 2/6;
+    grid-row: 5/6;
     color: var(--green)
 }
 
 .email {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column: 3/4;
+    grid-row: 5/6;
     color: var(--green)
 }
 
 .github {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column: 4/5;
+    grid-row: 5/6;
     color: var(--green)
 }
 
 .linkedin {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column: 5/6;
+    grid-row: 5/6;
     color: var(--green)
 }
