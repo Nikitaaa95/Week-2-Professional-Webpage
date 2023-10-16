@@ -36,7 +36,7 @@
 }
 
 .hero {
-    height: 400px;
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/ivy.jpg");
@@ -49,14 +49,78 @@ body {
     font-family: 'Georgia', sans-serif;
 }
 
-.body h2 {
-    text align: left;
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
     font-family: 'Georgia', sans-serif;
-    display: inline-block;
+    justify: space-evenly;
 }
 
-.body p {
-    display: inline;
-    float: right;
+.about-me {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
+.text-about-me {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.work {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.text-work {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.contact-me {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.phone {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    color: var(--green)
+}
+
+.email {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: var(--green)
+}
+
+.github {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: var(--green)
+}
+
+.linkedin {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    color: var(--green)
+}

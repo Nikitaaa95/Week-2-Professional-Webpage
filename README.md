@@ -9,3 +9,6 @@ https://www.pexels.com/search/ivy/
 
 Link Formattin
 https://www.w3schools.com/css/css_link.asp
+
+CSS Guidance
+https://www.w3schools.com/css/css_rwd_templates.asp
