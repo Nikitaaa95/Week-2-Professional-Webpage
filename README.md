@@ -1,12 +1,24 @@
-Student Notes Image
-https://www.oxford-royale.com/articles/the-best-way-to-write-study-notes/
+# <Week-1-Horiseon>
 
-Photography Image
-https://www.veranda.com/travel/g36674338/beautiful-mountains/
+## Link
+https://nikitaaa95.github.io/Week-2-Personal-Webpage
 
-Ivy Picture
-https://www.pexels.com/search/ivy/
+## Description
 
+The purpose of this site is to provide future employers and other partners to see some information about me and some samples of my work.
+
+## Installation
+
+N/A
+
+## Usage
+
+Please use this site to learn more about me and better understand how I could make an excellent addition to your team. 
+
+If you  like what you see, then you can use the contact me sections to see the best methods to reach out to me!
+
+## Credits
+### Tutorials and Aids  used for this project
 Link Formatting
 https://www.w3schools.com/css/css_link.asp
 
@@ -30,3 +42,19 @@ https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number#:~:text
 
 Opacity Effect
 https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
+
+### Images and other third party assets
+Student Notes Image
+https://www.oxford-royale.com/articles/the-best-way-to-write-study-notes/
+
+Photography Image
+https://www.veranda.com/travel/g36674338/beautiful-mountains/
+
+Ivy Picture
+https://www.pexels.com/search/ivy/
+
+
+## Website Screenshot
+![Screenshot of my current website](assets/images/Webpage Screenshot.png)
+
+

@@ -62,7 +62,7 @@ h2 {
 .wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-row-gap: 10px;
     grid-column-gap: 20px;
     font-family: 'Georgia', sans-serif;
@@ -160,7 +160,8 @@ h2 {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto auto;
-    
+        row-gap: 20px;
+        
     .student {
         grid-column: 2/6;
         grid-row: 2/3;
