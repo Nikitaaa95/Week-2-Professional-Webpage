@@ -74,8 +74,18 @@ h2 {
     grid-row: 1/2;
 }
 
+.my-picture img {
+    border: none;
+}
+
+.my-picture {
+    grid-column:2/3;
+    grid-row:1/2;
+    height: 300px;
+}
+
 .text-about-me {
-    grid-column: 2/6;
+    grid-column: 3/6;
     grid-row: 1/2;
 }
 
