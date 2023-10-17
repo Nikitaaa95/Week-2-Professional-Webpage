@@ -55,6 +55,7 @@ https://www.pexels.com/search/ivy/
 
 
 ## Website Screenshot
-![Screenshot of my current website](assets/images/Webpage Screenshot.png)
+![The screenshot of the working website as visible after my alterations.](assets/images/webpage-screenshot.png)
+
 
 
