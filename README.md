@@ -1,7 +1,7 @@
 # <Week-1-Horiseon>
 
 ## Link
-https://nikitaaa95.github.io/Week-2-Personal-Webpage
+https://nikitaaa95.github.io/Week-2-Professional-Webpage
 
 ## Description
 
