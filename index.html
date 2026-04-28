@@ -7,16 +7,176 @@
   <title>Nikita Thomas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <main class="hero">
+
+  <nav class="nav">
+    <span class="nav-name">NT</span>
+    <div class="nav-links">
+      <a href="#timeline">Timeline</a>
+      <a href="#connect">Connect</a>
+      <a href="#projects">Projects</a>
+      <a href="#more">More</a>
+    </div>
+  </nav>
+
+  <section class="hero">
     <img src="assets/images/My-picture.jpeg" alt="Nikita Thomas" class="hero-photo">
     <h1 class="hero-name">Nikita Thomas</h1>
-    <p class="hero-title">MBA Candidate &amp; Operations Leader</p>
-  </main>
-</body>
+    <p class="hero-title">Operator. Technologist. Problem Solver.</p>
+    <a href="#timeline" class="scroll-down">↓</a>
+  </section>
 
+  <section id="timeline" class="section">
+    <p class="section-label">The Journey</p>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="tl-year">2017</span>
+        <p class="tl-company">Saint Mary's College of California</p>
+        <h3 class="tl-role">B.S. Economics, Minor in Business Administration</h3>
+        <p class="tl-desc">Where the foundation was built — studying the systems that move money and markets, with a side of figuring out how businesses actually run.</p>
+        <div class="tl-tags">
+          <span class="tag">Economics</span>
+          <span class="tag">Business Administration</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2017</span>
+        <p class="tl-company">First Republic Securities</p>
+        <h3 class="tl-role">Client Administration Operations Associate</h3>
+        <p class="tl-desc">Started at the frontlines of financial services — learning the real language of wealth management: edge cases, workarounds, and what actually breaks under pressure.</p>
+        <div class="tl-tags">
+          <span class="tag">Financial Services</span>
+          <span class="tag">Operations</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2019</span>
+        <p class="tl-company">First Republic Securities</p>
+        <h3 class="tl-role">Senior Associate → Associate Director</h3>
+        <p class="tl-desc">Grew through a wave of acquisitions, integrating teams, tools, and workflows. Got really good at bringing order to chaos — and started asking why the tech always made things harder.</p>
+        <div class="tl-tags">
+          <span class="tag">Data Governance</span>
+          <span class="tag">Integrations</span>
+          <span class="tag">Compliance</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2022</span>
+        <p class="tl-company">First Republic Securities</p>
+        <h3 class="tl-role">Salesforce Integration Lead</h3>
+        <p class="tl-desc">My first real taste of owning a tech platform end-to-end — partnering with product and engineering to redesign workflows and build out executive reporting. Realized I wanted more of this.</p>
+        <div class="tl-tags">
+          <span class="tag">Salesforce</span>
+          <span class="tag">Fintech</span>
+          <span class="tag">Product Partnership</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2023</span>
+        <p class="tl-company">JP Morgan</p>
+        <h3 class="tl-role">Senior Director, Operations</h3>
+        <p class="tl-desc">$100B+ in client assets migrated post-acquisition. Learned what it takes to move critical financial infrastructure at scale — and what breaks when you don't plan for it.</p>
+        <div class="tl-tags">
+          <span class="tag">Asset Migration</span>
+          <span class="tag">Platform Design</span>
+          <span class="tag">Executive Reporting</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2024</span>
+        <p class="tl-company">Columbia Engineering</p>
+        <h3 class="tl-role">Full-Stack Coding Bootcamp</h3>
+        <p class="tl-desc">Decided to stop translating between business and tech — and learn to speak both. HTML, CSS, JavaScript, and a whole new appreciation for what engineers deal with every day.</p>
+        <div class="tl-tags">
+          <span class="tag">Full-Stack</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Learning in Public</span>
+        </div>
+      </div>
+
+      <div class="timeline-item current">
+        <span class="tl-year">Now</span>
+        <p class="tl-company">UC Berkeley Haas</p>
+        <h3 class="tl-role">MBA Candidate, Class of 2027</h3>
+        <p class="tl-desc">Bringing it all together. VP of Academics. Chasing the AI in Business certificate. Focused on the intersection of operations and technology — with an eye on fintech and healthcare, where the hardest problems are hiding.</p>
+        <div class="tl-tags">
+          <span class="tag tag--accent">Healthcare Tech</span>
+          <span class="tag tag--accent">AI &amp; Automation</span>
+          <span class="tag tag--accent">MBA</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="connect" class="section">
+    <p class="section-label">Connect</p>
+    <div class="connect-grid">
+      <a href="https://www.linkedin.com/in/nikitamaryannthomas/" target="_blank" class="connect-card">
+        <span class="connect-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </span>
+        <span class="connect-name">LinkedIn</span>
+        <span class="connect-handle">nikitamaryannthomas</span>
+      </a>
+      <a href="https://github.com/Nikitaaa95" target="_blank" class="connect-card">
+        <span class="connect-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </span>
+        <span class="connect-name">GitHub</span>
+        <span class="connect-handle">Nikitaaa95</span>
+      </a>
+      <a href="mailto:nikita_thomas@berkeley.edu" class="connect-card">
+        <span class="connect-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+        </span>
+        <span class="connect-name">Email</span>
+        <span class="connect-handle">nikita_thomas@berkeley.edu</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="section-label">Projects</p>
+    <div class="projects-grid">
+      <a href="https://www.annacooks.xyz/" target="_blank" class="project-card">
+        <img src="assets/images/anna-logo.png" alt="Anna — A Personal Recipe Manager">
+        <div class="project-info">
+          <h3>Anna</h3>
+          <p>A personal recipe manager — built from scratch.</p>
+          <span class="project-link">annacooks.xyz ↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="more" class="section">
+    <p class="section-label">More</p>
+    <div class="bento-grid">
+      <div class="bento-card">
+        <h3>Top 10 Books</h3>
+        <p>Coming soon</p>
+      </div>
+      <div class="bento-card">
+        <h3>Places &amp; Recs</h3>
+        <p>Coming soon</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Nikita Thomas &copy; 2025</p>
+  </footer>
+
+</body>
 </html>
