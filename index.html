@@ -1,101 +1,231 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Professional Webpage</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikita Thomas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  </head>
+<body>
 
-  <body>
-    <div class="header" alt="ivy covered walls">      
-        <h1>Nikita M. Thomas</h1>
-        <div>
-        <link class="section">
-            <a href="#about-me" class="About-me">About Me</a>
-        </link>
-        <link class="section">
-            <a href="#work" class="Work">Work</a>
-        </link>
-        <link class="section">
-            <a href="#contact-me" class="Contact-Me">Contact Me</a>
-        </link>
-        <link class="section">
-            <a href="/Users/nikitathomas/bootcamp/Homework/Week-2-Personal-Webpage/assets/documentation/Resume - Corporate.pdf" class="Resume">Resume</a>
-        </link>
-    </ul>
-    </div>
-    </div>
-      </header>
+  <header class="header">
+    <h1>Nikita M. Thomas</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/documentation/Resume - Corporate.pdf" target="_blank" class="resume-btn">Resume</a>
+    </nav>
+  </header>
 
-      <div class="hero">
-    </div>
-
-    <div class="wrapper">
-      <div class="about-me" id="about-me">
-        <h2>About Me</h2>
-        </div>
-        <div class="my-picture">
-            <img src="assets/images/My-picture.jpeg"></img>
-            </div>
-        <div class="text-about-me">
-        <p>
-            I studied Economics and Business in California and honed my skills through several valuable internships during my college years. My journey in the professional world began at First Republic Securities Company, where I started as an operations associate. Through dedication and hard work, I've since climbed the ranks and currently hold the position of Senior Director of Operations. I'm passionate about my work, and as the world is changing, I've realized that I'm consistently working with team members in tech and product. In an effort to become a better colleague to them, I'm trying to increase my own technical skills. Please reach out to me to talk about my work and how I could be a good addition to your team!     
-            <br></br>
-            I also love to discuss history and literature. My favorite book is Pride and Prejudice!
-        </p>
-        </div>
-
-        <div class="work" id="work"> <h2>Work</h2> </div>
-        <div class="student project">
-            <section id="project">
-                <a href="https://nikitaaa95.github.io/prework-study-guide/">
-                    <img src="assets/images/student.jpeg" alt="collection of handwritten notes and post-its">
-                    <section class="caption" id="caption">Study Guide</section>
-                </img></a></section></div>
-                
-        <div class="horiseon project">
-            <section id="project">
-                <a href="https://nikitaaa95.github.io/Horiseon-Develop-Accessibility/">
-                    <img src="assets/images/horiseon.png" alt="picture of the Horiseon webpage including a picture of people in a boardroom">
-                    <section class="caption" id="caption">Horiseon</section>
-                </img></a></section></div>
-        <div class="puppy project">
-            <section id="project">
-                <a href="assets/images/construction.jpeg">
-                    <img src="assets/images/puppy.jpg" alt="black dog on bed">
-                    <section class="caption" id="caption">Puppy Project</section>
-                </img></a></section></div>
-        <div class="books project">
-            <section id="project">
-                <a href="assets/images/construction.jpeg">
-                    <img  src="assets/images/books.jpeg" alt="a huge wall of books stacked neatly">
-                    <section class="caption" id="caption">Library</section>
-                </img></a></section></div>
-        <div class="photography project">
-            <section id="project">
-                <a href="assets/images/construction.jpeg">
-                    <img src="assets/images/photography.jpeg" alt="a snowy mountain pass">
-                    <section class="caption" id="caption">Photo Gallery</section>
-            </img></a></section></div>
-
-    <div class="contact-me" id="contact-me">
-        <h2>Contact Me</h2></div>
-        <div class="phone">
-                <h3 class="phone-number"><a href=tel:510-378-2656>510-378-2656</a></h3></div>
-        <div class="email">
-                <h3><a href="mailto:nikitamthomas@gmail.com">nikitamthomas@gmail.com</a></h3></div>
-        <div class="github">
-                <h3><a href="https://github.com/Nikitaaa95"> Github</a></h3></div>
-        <div class="linkedin">
-                <h3><a href="https://www.linkedin.com/in/nikita-thomas-34b9a153/">LinkedIn</a></h3></div>
+  <div class="hero">
+    <div class="hero-content">
+      <img src="assets/images/My-picture.jpeg" alt="Nikita Thomas" class="hero-photo">
+      <div class="hero-text">
+        <h2>MBA Candidate &amp; Operations Leader</h2>
+        <p>UC Berkeley Haas &nbsp;·&nbsp; Financial Services &nbsp;·&nbsp; Healthcare Technology</p>
       </div>
-    
     </div>
-    </div>
-  </body>
-  
-<footer> </footer>
+  </div>
+
+  <main class="container">
+
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          I'm an MBA candidate at UC Berkeley Haas (Class of 2027) with 8 years of experience leading technology integrations, workflow automation, and cross-functional platform projects in financial services. My career has spanned JP Morgan and First Republic Securities, where I held progressively senior operations roles — most recently as Senior Director.
+        </p>
+        <p>
+          I'm passionate about the intersection of business operations and technology. Through a full-stack coding bootcamp and my ongoing MBA, I've been building the technical skills to collaborate more effectively with product and engineering teams — and to explore AI-enabled automation tools that can transform how organizations work.
+        </p>
+        <p>
+          Outside of work, I'm an avid baker who loves testing new recipes, and I'm working my way through the Modern Library's 100 Best Novels. My favorite so far is <em>Pride and Prejudice</em>.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="company">JP Morgan</h3>
+              <p class="location">New York, NY &mdash; Acquired FRB, retained functional title and role</p>
+            </div>
+            <span class="dates">2023&ndash;2025</span>
+          </div>
+          <p class="role">Senior Director, Operations</p>
+          <ul>
+            <li>Led cross-functional workstream for migration of $100B+ in client assets, defining business requirements, future-state workflows, and data handoff standards with product and technology teams</li>
+            <li>Owned external platform integrations (Salesforce, Pershing, Fidelity Charitable), translating operational needs into product roadmaps and resolving vendor escalations</li>
+            <li>Designed and implemented structured reporting frameworks to surface operational signals and risk metrics to executive leadership during post-acquisition transformation</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="company">First Republic Securities Company</h3>
+              <p class="location">San Francisco, CA / Boston, MA</p>
+            </div>
+            <span class="dates">2017&ndash;2023</span>
+          </div>
+          <p class="role">Senior Director, Operations (2023)</p>
+          <ul>
+            <li>Led business ownership of a Salesforce integration, partnering with product and technology teams to define requirements, redesign workflows, and improve data visibility</li>
+            <li>Redesigned team operating model and capability structure during a high-growth period</li>
+            <li>Built and maintained executive dashboards tracking risk, operations, and performance metrics</li>
+          </ul>
+          <p class="role">Associate Director, Operations (2022&ndash;2023)</p>
+          <ul>
+            <li>Served as operations SME for 300+ financial professionals, resolving workflow edge cases and platform inconsistencies</li>
+            <li>Established standardized procedures and escalation paths to improve compliance and end-user experience</li>
+          </ul>
+          <p class="role">Senior Associate, Operations (2019&ndash;2022)</p>
+          <ul>
+            <li>Supported rapid scaling following multiple acquisitions, integrating teams, tools, and workflows with updated data governance standards</li>
+            <li>Analyzed account-opening workflows for regulatory compliance, documenting product and process pain points</li>
+          </ul>
+          <p class="role">Client Administration Operations Associate (2017&ndash;2019)</p>
+          <ul>
+            <li>Provided frontline support and surfaced recurring workflow breakdowns to inform process improvement initiatives</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>University of California, Berkeley</h3>
+          <p class="edu-degree">Master of Business Administration</p>
+          <p class="edu-school">Haas School of Business</p>
+          <p class="edu-details">VP of Academics, MBA Association &nbsp;&middot;&nbsp; AI in Business Certificate (seeking) &nbsp;&middot;&nbsp; Experience Lead, 2026 WiL Conference</p>
+          <span class="edu-date">Class of 2027</span>
+        </div>
+        <div class="edu-card">
+          <h3>Columbia Engineering</h3>
+          <p class="edu-degree">Coding Boot Camp</p>
+          <p class="edu-school">Full-Stack Foundations</p>
+          <span class="edu-date">Mar 2024</span>
+        </div>
+        <div class="edu-card">
+          <h3>Saint Mary's College of California</h3>
+          <p class="edu-degree">Bachelor of Science, Economics</p>
+          <p class="edu-details">Minor in Business Administration</p>
+          <span class="edu-date">Feb 2017</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Platforms &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Salesforce</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Power Automate</span>
+            <span class="tag">Microsoft Suite</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Operations &amp; Strategy</h3>
+          <div class="skill-tags">
+            <span class="tag">Cross-functional Leadership</span>
+            <span class="tag">Platform &amp; Workflow Design</span>
+            <span class="tag">Process Redesign</span>
+            <span class="tag">Vendor Management</span>
+            <span class="tag">Risk &amp; Compliance</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Technical</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Data Governance</span>
+            <span class="tag">Product Requirements</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <a href="https://nikitaaa95.github.io/prework-study-guide/" target="_blank">
+            <img src="assets/images/student.jpeg" alt="Study Guide project">
+            <div class="project-overlay">
+              <span class="project-title">Study Guide</span>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://nikitaaa95.github.io/Horiseon-Develop-Accessibility/" target="_blank">
+            <img src="assets/images/horiseon.png" alt="Horiseon accessibility project">
+            <div class="project-overlay">
+              <span class="project-title">Horiseon</span>
+            </div>
+          </a>
+        </div>
+        <div class="project-card coming-soon">
+          <img src="assets/images/books.jpeg" alt="Books project">
+          <div class="project-overlay">
+            <span class="project-title">Coming Soon</span>
+          </div>
+        </div>
+        <div class="project-card coming-soon">
+          <img src="assets/images/photography.jpeg" alt="Photography project">
+          <div class="project-overlay">
+            <span class="project-title">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <a href="tel:510-378-2656" class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span>510-378-2656</span>
+        </a>
+        <a href="mailto:nikita_thomas@berkeley.edu" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span>nikita_thomas@berkeley.edu</span>
+        </a>
+        <a href="https://github.com/Nikitaaa95" target="_blank" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span>Nikitaaa95</span>
+        </a>
+        <a href="https://www.linkedin.com/in/nikitamaryannthomas/" target="_blank" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span>nikitamaryannthomas</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Nikita M. Thomas &copy; 2025</p>
+  </footer>
+
+</body>
 </html>
