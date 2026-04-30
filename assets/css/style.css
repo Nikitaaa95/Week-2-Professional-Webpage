@@ -72,6 +72,29 @@ body {
   color: var(--gold);
 }
 
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-mid);
+  transition: color 0.2s;
+}
+
+.nav-icon:hover {
+  color: var(--gold);
+}
+
+.nav-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 /* ── Hero ── */
 .hero {
   min-height: calc(100vh - 52px);
