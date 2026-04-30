@@ -641,44 +641,37 @@ body {
   background: #f4f7f9;
 }
 
-.bento-pins {
+.bento-city-text {
   display: flex;
-  align-items: flex-end;
-  gap: 20px;
+  align-items: baseline;
   margin-bottom: 20px;
+  line-height: 1;
 }
 
-.pin-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
-.pin-icon {
-  width: 22px;
-  height: 22px;
-  color: #7B8FA8;
-  opacity: 0.7;
-}
-
-.pin-group--mid .pin-icon {
-  color: #6B8E6B;
-  width: 26px;
-  height: 26px;
-}
-
-.pin-group--tall .pin-icon {
-  color: #8B7355;
-  width: 30px;
-  height: 30px;
-}
-
-.pin-city {
-  font-size: 9px;
+.city-initial {
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--text-light);
+  color: var(--green-deep);
+}
+
+.city-initial:nth-child(1) {
+  font-size: 52px;
+  opacity: 0.15;
+  margin-right: -10px;
+  z-index: 1;
+}
+
+.city-initial:nth-child(2) {
+  font-size: 62px;
+  opacity: 0.22;
+  margin-right: -14px;
+  z-index: 2;
+}
+
+.city-initial:nth-child(3) {
+  font-size: 56px;
+  opacity: 0.32;
+  z-index: 3;
 }
 
 /* ── Footer ── */
