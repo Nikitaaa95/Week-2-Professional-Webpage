@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatify — Nikita Thomas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .article-hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 48px;
+      text-align: center;
+    }
+
+    .article-eyebrow {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .article-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 300;
+      color: var(--green-deep);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .article-byline {
+      font-size: 12px;
+      color: var(--text-light);
+      letter-spacing: 0.08em;
+    }
+
+    .article-cover {
+      max-width: 860px;
+      margin: 0 auto 72px;
+      padding: 0 24px;
+    }
+
+    .article-cover img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .article-body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px 96px;
+    }
+
+    .article-body p {
+      font-size: 16px;
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 28px;
+    }
+
+    .article-body h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--green-deep);
+      margin: 52px 0 16px;
+      line-height: 1.2;
+    }
+
+    .article-pullquote {
+      margin: 52px 0;
+      padding: 32px 36px;
+      border-left: 3px solid var(--gold);
+      background: #fefcf3;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .article-pullquote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--green-deep);
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .article-pullquote cite {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .article-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--text-mid);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 96px;
+      max-width: 640px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 24px 96px;
+      width: fit-content;
+    }
+
+    .article-back:hover {
+      color: var(--gold);
+    }
+
+    .article-divider {
+      max-width: 640px;
+      margin: 0 auto 0;
+      padding: 0 24px;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-name">NT</a>
+    <div class="nav-links">
+      <a href="index.html#timeline">Timeline</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#more">More</a>
+    </div>
+    <div class="nav-icons">
+      <a href="https://www.linkedin.com/in/nikitamaryannthomas/" target="_blank" class="nav-icon" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/Nikitaaa95" target="_blank" class="nav-icon" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="mailto:nikita_thomas@berkeley.edu" class="nav-icon" aria-label="Email">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/><path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <p class="article-eyebrow">Haas Marketing Challenge · 2026</p>
+    <h1 class="article-title">Building My First AI Video Ad with Creatify</h1>
+    <p class="article-byline">Nikita Thomas</p>
+  </div>
+
+  <div class="article-cover">
+    <img src="assets/images/mighty-paw.png" alt="Mighty Paw — AI-generated video ad built with Creatify">
+  </div>
+
+  <div class="article-body">
+
+    <div class="article-tag-row">
+      <span class="tag">AI Tools</span>
+      <span class="tag">Video Marketing</span>
+      <span class="tag">Haas</span>
+      <span class="tag">Creatify</span>
+    </div>
+
+    <p>When Creatify came to Haas, I was the first person in the room with my hand up. I spend a lot of time thinking about where AI fits inside operations and product workflows — but video marketing had always felt like a different world. Long production timelines, expensive agencies, a lot of guesswork about what would actually resonate. Creatify was promising to collapse all of that.</p>
+
+    <p>The challenge was simple: use their platform to build a real video ad. The brand? Entirely up to me.</p>
+
+    <h2>Meet Mighty Paw</h2>
+
+    <p>I built an ad for a fictional dog food company called Mighty Paw — starring my very real dog. The brand brief I had in my head: premium, playful, the kind of thing you'd see in a Whole Foods aisle. I wanted to see if Creatify could actually capture a brand voice without me knowing anything about video production.</p>
+
+    <p>Spoiler: it did. Within a few minutes, I had a polished, ready-to-run video ad. The kind that would have taken a small team days to produce.</p>
+
+    <div class="article-pullquote">
+      <p>"We're the only AI-powered platform that helps marketers and creative teams create, test, and improve video ads — without long production timelines or guesswork. With Creatify, you can turn any product link into dozens of ready-to-run video ads in seconds."</p>
+      <cite>Creatify</cite>
+    </div>
+
+    <h2>What I Actually Noticed</h2>
+
+    <p>What impressed me wasn't just the speed — it was the reduction in the decision paralysis that usually kills creative projects early. When you can generate ten variations in the time it normally takes to brief a designer, the conversation shifts. You stop debating concepts and start reacting to real outputs. That's a fundamentally different creative process.</p>
+
+    <p>From an operations lens, the implications are significant. Marketing teams that currently rely on agency cycles or internal production queues could move dramatically faster. For a growth-stage company — or a healthcare startup trying to run localized campaigns across markets — that kind of velocity matters.</p>
+
+    <h2>Why It Stuck With Me</h2>
+
+    <p>I came into the challenge curious. I left thinking about the organizational change that comes with tools like this — not just the time saved, but the workflows that need to be rebuilt around them. Who owns iteration? How do you test at scale without losing brand consistency? Those are the questions I find most interesting, and Creatify made them feel very real, very fast.</p>
+
+  </div>
+
+  <hr class="article-divider">
+
+  <a href="index.html#projects" class="article-back">← Back to Projects</a>
+
+  <footer class="footer">
+    <p>Nikita Thomas &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
