@@ -243,6 +243,87 @@ body {
   margin-bottom: 44px;
 }
 
+/* ── Timeline Layout ── */
+.timeline-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.standout-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  order: -1;
+}
+
+.standout-card {
+  border-left: 3px solid var(--gold);
+  background: #fefcf3;
+  padding: 18px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.standout-label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.standout-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.standout-body {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+@media (min-width: 900px) {
+  .timeline-layout {
+    display: grid;
+    grid-template-columns: 680px 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+
+  .timeline {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .standout-rail {
+    grid-column: 2;
+    grid-row: 1;
+    order: 0;
+    gap: 16px;
+    padding-top: 420px;
+  }
+
+  .standout-card:nth-child(2) {
+    margin-top: 32px;
+  }
+
+  .standout-card:nth-child(3) {
+    margin-top: 8px;
+  }
+
+  .timeline-layout .timeline {
+    margin: 0;
+    max-width: none;
+  }
+}
+
 /* ── Timeline ── */
 .timeline {
   position: relative;
