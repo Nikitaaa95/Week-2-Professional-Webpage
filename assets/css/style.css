@@ -86,11 +86,9 @@ body {
   overflow: hidden;
 }
 
-.hero-backdrop {
+.hero-backdrop-first,
+.hero-backdrop-last {
   position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: 'Cormorant Garamond', serif;
   font-size: 17vw;
   font-weight: 300;
@@ -100,6 +98,16 @@ body {
   user-select: none;
   pointer-events: none;
   letter-spacing: -0.01em;
+}
+
+.hero-backdrop-first {
+  top: 22%;
+  left: -1%;
+}
+
+.hero-backdrop-last {
+  top: 46%;
+  right: -1%;
 }
 
 .hero-content {
