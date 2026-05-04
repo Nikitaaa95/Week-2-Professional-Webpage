@@ -11,6 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+
+    /* ── Hero ── */
     .city-hero {
       position: relative;
       height: 520px;
@@ -28,25 +30,16 @@
     .city-hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(5, 46, 34, 0.72) 0%, transparent 55%);
+      background: linear-gradient(to top, rgba(5, 46, 34, 0.75) 0%, transparent 55%);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       padding: 48px;
     }
 
-    .city-eyebrow {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-
     .city-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(52px, 8vw, 88px);
+      font-size: clamp(56px, 9vw, 96px);
       font-weight: 300;
       color: #fff;
       line-height: 1;
@@ -54,144 +47,162 @@
     }
 
     .city-subtitle {
-      font-size: 14px;
-      color: rgba(255,255,255,0.7);
-      letter-spacing: 0.04em;
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
     }
 
+    /* ── Body ── */
     .city-body {
-      max-width: 1100px;
+      max-width: 860px;
       margin: 0 auto;
-      padding: 72px 24px 96px;
+      padding: 64px 24px 96px;
     }
 
-    .city-section-label {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 28px;
+    /* ── Season blocks ── */
+    .season-block {
+      margin-bottom: 48px;
     }
 
-    /* ── Seasons ── */
-    .seasons-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 72px;
+    .season-emoji {
+      font-size: 40px;
+      line-height: 1;
+      margin-bottom: 10px;
+      display: block;
     }
 
-    .season-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px 28px 32px;
-    }
-
-    .season-tag {
-      display: inline-block;
-      font-size: 9px;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-    }
-
-    .season-tag--summer  { background: #e8f4e8; color: #3A5A40; }
-    .season-tag--fall    { background: #f4ede8; color: #8B5A2B; }
-    .season-tag--winter  { background: #e8eef4; color: #2B4A6B; }
-
-    .season-card h3 {
+    .season-heading {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
+      font-size: 30px;
       font-weight: 600;
       color: var(--green-deep);
-      margin-bottom: 12px;
-      line-height: 1.2;
+      margin-bottom: 10px;
     }
 
-    .season-card p {
-      font-size: 14px;
+    .season-block p {
+      font-size: 15px;
       color: var(--text-mid);
       line-height: 1.75;
+      max-width: 620px;
     }
 
-    .season-card ul {
+    /* ── Fenway card ── */
+    .fenway-card {
+      background: var(--green-deep);
+      border-radius: 16px;
+      padding: 36px 40px;
+      margin: 48px 0;
+    }
+
+    .fenway-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .fenway-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+
+    .fenway-steps {
       list-style: none;
       padding: 0;
       margin: 0;
-    }
-
-    .season-card ul li {
-      font-size: 14px;
-      color: var(--text-mid);
-      line-height: 1.7;
-      padding: 4px 0;
-      padding-left: 14px;
-      position: relative;
-    }
-
-    .season-card ul li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-      font-size: 11px;
-    }
-
-    /* ── Food ── */
-    .food-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 12px;
     }
 
-    .food-item {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 20px 24px;
+    .fenway-steps li {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      font-size: 15px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.5;
     }
 
-    .food-item-name {
+    .fenway-steps li .step-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 600;
-      color: var(--green-deep);
-      margin-bottom: 4px;
+      color: var(--gold);
+      flex-shrink: 0;
+      width: 20px;
     }
 
-    .food-item-order {
-      font-size: 11px;
+    /* ── Divider ── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0 48px;
+    }
+
+    .section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 8px;
+      margin-bottom: 32px;
     }
 
-    .food-item-note {
-      font-size: 13px;
-      color: var(--text-mid);
-      line-height: 1.65;
+    /* ── Food list ── */
+    .food-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
     }
 
-    .city-divider {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-      border: none;
+    .food-entry {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 16px 32px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+
+    .food-entry:first-child {
       border-top: 1px solid var(--border);
     }
 
+    .food-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .food-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--green-deep);
+    }
+
+    .food-order {
+      font-size: 12px;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .food-note {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ── Back ── */
     .city-back {
       display: block;
       width: fit-content;
-      margin: 0 auto;
-      padding: 32px 24px 72px;
+      margin: 56px auto 72px;
       font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.08em;
@@ -199,15 +210,13 @@
       text-decoration: none;
     }
 
-    .city-back:hover {
-      color: var(--gold);
-    }
+    .city-back:hover { color: var(--gold); }
 
     @media (max-width: 640px) {
-      .city-hero { height: 380px; }
-      .city-hero-overlay { padding: 28px 24px; }
-      .seasons-grid { grid-template-columns: 1fr; }
-      .food-grid { grid-template-columns: 1fr; }
+      .city-hero { height: 360px; }
+      .city-hero-overlay { padding: 28px 20px; }
+      .fenway-card { padding: 28px 24px; }
+      .food-entry { grid-template-columns: 1fr; gap: 6px; }
     }
   </style>
 </head>
@@ -237,7 +246,6 @@
   <div class="city-hero">
     <img src="assets/images/boston-charles.jpg" alt="Boston skyline from the Charles River">
     <div class="city-hero-overlay">
-      <p class="city-eyebrow">Places &amp; Recs</p>
       <h1 class="city-title">Boston</h1>
       <p class="city-subtitle">Two years, all four seasons, more cannolis than I should admit.</p>
     </div>
@@ -245,91 +253,98 @@
 
   <div class="city-body">
 
-    <p class="city-section-label">By Season</p>
-    <div class="seasons-grid">
-
-      <div class="season-card">
-        <span class="season-tag season-tag--summer">Summer</span>
-        <h3>Rent kayaks on the Charles</h3>
-        <p>There is nothing better than being out on the water with the skyline right there in front of you. Rent from Community Rowing or the Esplanade — go on a weekday if you can, the weekend crowds are real.</p>
-      </div>
-
-      <div class="season-card">
-        <span class="season-tag season-tag--fall">Baseball Season</span>
-        <h3>You must go to Fenway</h3>
-        <ul>
-          <li>Drink outside first — the bars around Fenway are part of the experience</li>
-          <li>Show up in the 3rd or 4th inning, lines are gone and the energy is already there</li>
-          <li>Sing Sweet Caroline. Non-negotiable.</li>
-          <li>Buy a hot dog</li>
-          <li>Cheer whenever everyone else does — you'll figure it out</li>
-        </ul>
-      </div>
-
-      <div class="season-card">
-        <span class="season-tag season-tag--winter">Winter</span>
-        <h3>Seaport winter fairs</h3>
-        <p>The Seaport district goes all out in winter. The fairs are cozy, the lights are good, and it's one of those nights where the cold actually makes it feel more festive. Bundle up and go.</p>
-      </div>
-
+    <!-- Summer -->
+    <div class="season-block">
+      <span class="season-emoji">☀️</span>
+      <h2 class="season-heading">Rent kayaks on the Charles</h2>
+      <p>There is nothing better than being out on the water with the skyline right in front of you — especially in summer. Rent from Community Rowing or off the Esplanade. Go on a weekday if you can. Weekend crowds are real.</p>
     </div>
 
-    <p class="city-section-label">Where to Eat &amp; Drink</p>
-    <div class="food-grid">
+    <!-- Fenway -->
+    <div class="fenway-card">
+      <p class="fenway-label">⚾ Baseball Season</p>
+      <h2 class="fenway-title">How to do Fenway</h2>
+      <ol class="fenway-steps">
+        <li><span class="step-num">1</span> Drink outside first — the bars around Fenway are part of the experience</li>
+        <li><span class="step-num">2</span> Show up in the 3rd or 4th inning. Lines are gone, energy is already there</li>
+        <li><span class="step-num">3</span> Sing Sweet Caroline. Non-negotiable.</li>
+        <li><span class="step-num">4</span> Buy a hot dog</li>
+        <li><span class="step-num">5</span> Cheer whenever everyone else does — you'll figure it out</li>
+      </ol>
+    </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Panza</p>
-        <p class="food-item-order">Order: Lobster Ravioli</p>
-        <p class="food-item-note">Don't skip this one. The lobster ravioli is the reason you go.</p>
+    <!-- Winter -->
+    <div class="season-block">
+      <span class="season-emoji">❄️</span>
+      <h2 class="season-heading">Seaport winter fairs</h2>
+      <p>The Seaport goes all out in winter. The fairs are cozy, the lights are good, and it's one of those nights where being cold actually makes it feel more festive. Bundle up and go.</p>
+    </div>
+
+    <hr class="section-divider">
+    <p class="section-heading">🍽 Eat & Drink</p>
+
+    <div class="food-list">
+
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Panza</span>
+          <span class="food-order">get the lobster ravioli</span>
+        </div>
+        <p class="food-note">Don't skip this one. The lobster ravioli is the reason you go.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Lucca — North End</p>
-        <p class="food-item-order">Order: Any pasta</p>
-        <p class="food-item-note">Everything in the North End is good pasta, but Lucca is my personal pick. Walk the neighborhood after — it feels like a different city.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Lucca</span>
+          <span class="food-order">any pasta, honestly</span>
+        </div>
+        <p class="food-note">Everything in the North End is good pasta, but Lucca is my personal pick. Walk the neighborhood after — it feels like a completely different city.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Mike's vs. Bova — Cannoli</p>
-        <p class="food-item-order">Order: A cannoli (obviously)</p>
-        <p class="food-item-note">I've done the research. Mike's is the classic, but Bova wins on manageability — you can actually finish a whole one. Everyone I've taken has loved Bova more. Take that how you will.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Mike's vs. Bova</span>
+          <span class="food-order">cannoli, obviously</span>
+        </div>
+        <p class="food-note">I've done the research. Mike's is the classic, but Bova wins on manageability — you can actually finish a whole one. Everyone I've taken has ended up loving Bova more. Take that how you will.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Neptune Oyster</p>
-        <p class="food-item-order">Order: Oysters</p>
-        <p class="food-item-note">Best oysters in the city. Go when the weather's bad — the line gets long otherwise. Fair warning: everything else on the menu is fine but a little overpriced.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Neptune Oyster</span>
+          <span class="food-order">oysters</span>
+        </div>
+        <p class="food-note">Best oysters in the city. Go when the weather's bad — the line gets long otherwise. Fair warning: everything else is fine but kind of overpriced.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Row 34</p>
-        <p class="food-item-order">Order: Lobster Roll</p>
-        <p class="food-item-note">The lobster roll. Full stop.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Row 34</span>
+          <span class="food-order">lobster roll</span>
+        </div>
+        <p class="food-note">The lobster roll. Full stop.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Soju Bar</p>
-        <p class="food-item-order">Go on a weekend</p>
-        <p class="food-item-note">Great vibe on a weekend night. Caveat: it was the only real Asian scene I found while I was there, so take that with a grain of salt — but I always had a good time.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Soju Bar</span>
+          <span class="food-order">go on a weekend</span>
+        </div>
+        <p class="food-note">Great vibe on a weekend night. It was the only real Asian scene I found while I was there, so take that with a grain of salt — but I always had a good time.</p>
       </div>
 
-      <div class="food-item">
-        <p class="food-item-name">Parla</p>
-        <p class="food-item-order">Cocktails</p>
-        <p class="food-item-note">Go for drinks. Lovely space, good cocktail list.</p>
-      </div>
-
-      <div class="food-item">
-        <p class="food-item-name">Drink</p>
-        <p class="food-item-order">Cocktails</p>
-        <p class="food-item-note">No menu — they ask what you're in the mood for and make something. The whole experience is the point.</p>
+      <div class="food-entry">
+        <div class="food-left">
+          <span class="food-name">Parla + Drink</span>
+          <span class="food-order">cocktails</span>
+        </div>
+        <p class="food-note">Parla for a nice night out. Drink has no menu — they ask what you're in the mood for and make something. The whole experience is the point.</p>
       </div>
 
     </div>
 
   </div>
 
-  <hr class="city-divider">
   <a href="index.html#more" class="city-back">← Back</a>
 
   <footer class="footer">
