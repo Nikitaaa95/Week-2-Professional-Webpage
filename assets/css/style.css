@@ -639,6 +639,16 @@ body {
 
 .bento-card--places {
   background: #f4f7f9;
+  text-decoration: none;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.bento-card--places:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
 }
 
 .bento-city-text {
