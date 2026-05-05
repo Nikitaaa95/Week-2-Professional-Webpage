@@ -639,16 +639,8 @@ body {
 
 .bento-card--places {
   background: #f4f7f9;
-  text-decoration: none;
-  color: var(--text-dark);
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s, transform 0.2s;
-}
-
-.bento-card--places:hover {
-  border-color: var(--gold);
-  transform: translateY(-2px);
 }
 
 .bento-city-text {
@@ -662,6 +654,9 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   color: var(--green-deep);
+  text-decoration: none;
+  position: relative;
+  transition: opacity 0.2s, color 0.2s;
 }
 
 .city-initial:nth-child(1) {
@@ -682,6 +677,40 @@ body {
   font-size: 56px;
   opacity: 0.32;
   z-index: 3;
+}
+
+a.city-initial:hover {
+  opacity: 0.9;
+  color: var(--gold);
+  z-index: 10;
+}
+
+.city-initial--soon {
+  cursor: default;
+}
+
+.city-tip {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  color: var(--gold);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.city-initial--soon .city-tip {
+  color: var(--text-light);
+}
+
+.city-initial:hover .city-tip {
+  opacity: 1;
 }
 
 /* ── Footer ── */
