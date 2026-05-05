@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boston — Nikita Thomas</title>
+  <title>San Francisco — Nikita Thomas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
 
-    /* ── Hero ── */
     .city-hero {
       position: relative;
       height: 520px;
@@ -23,7 +22,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 40%;
+      object-position: center 50%;
       display: block;
     }
 
@@ -51,49 +50,21 @@
       color: rgba(255,255,255,0.75);
     }
 
-    /* ── Body ── */
     .city-body {
       max-width: 860px;
       margin: 0 auto;
       padding: 64px 24px 96px;
     }
 
-    /* ── Season blocks ── */
-    .season-block {
-      margin-bottom: 48px;
-    }
-
-    .season-emoji {
-      font-size: 40px;
-      line-height: 1;
-      margin-bottom: 10px;
-      display: block;
-    }
-
-    .season-heading {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 30px;
-      font-weight: 600;
-      color: var(--green-deep);
-      margin-bottom: 10px;
-    }
-
-    .season-block p {
-      font-size: 15px;
-      color: var(--text-mid);
-      line-height: 1.75;
-      max-width: 620px;
-    }
-
-    /* ── Fenway card ── */
-    .fenway-card {
-      background: var(--green-deep);
+    /* ── City Lights feature card ── */
+    .feature-card {
+      background: var(--navy);
       border-radius: 16px;
       padding: 36px 40px;
-      margin: 48px 0;
+      margin-bottom: 56px;
     }
 
-    .fenway-label {
+    .feature-label {
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.2em;
@@ -102,48 +73,32 @@
       margin-bottom: 6px;
     }
 
-    .fenway-title {
+    .feature-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 32px;
       font-weight: 600;
       color: #fff;
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
 
-    .fenway-steps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .fenway-steps li {
-      display: flex;
-      align-items: baseline;
-      gap: 14px;
+    .feature-body {
       font-size: 15px;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.5;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.75;
+      max-width: 560px;
     }
 
-    .fenway-steps li .step-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 22px;
+    .feature-detail {
+      margin-top: 16px;
+      display: inline-block;
+      font-size: 11px;
       font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--gold);
-      flex-shrink: 0;
-      width: 20px;
     }
 
-    /* ── Divider ── */
-    .section-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 56px 0 48px;
-    }
-
+    /* ── Section heading ── */
     .section-heading {
       font-family: 'Cormorant Garamond', serif;
       font-size: 13px;
@@ -154,11 +109,16 @@
       margin-bottom: 32px;
     }
 
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 56px 0 48px;
+    }
+
     /* ── Food list ── */
     .food-list {
       display: flex;
       flex-direction: column;
-      gap: 0;
     }
 
     .food-entry {
@@ -198,11 +158,17 @@
       line-height: 1.7;
     }
 
-    /* ── Back ── */
+    /* ── City nav ── */
+    .city-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 72px;
+    }
+
     .city-back {
-      display: block;
-      width: fit-content;
-      margin: 56px auto 72px;
       font-size: 12px;
       font-weight: 500;
       letter-spacing: 0.08em;
@@ -212,10 +178,20 @@
 
     .city-back:hover { color: var(--gold); }
 
+    .city-next {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--text-mid);
+      text-decoration: none;
+    }
+
+    .city-next:hover { color: var(--gold); }
+
     @media (max-width: 640px) {
       .city-hero { height: 360px; }
       .city-hero-overlay { padding: 28px 20px; }
-      .fenway-card { padding: 28px 24px; }
+      .feature-card { padding: 28px 24px; }
       .food-entry { grid-template-columns: 1fr; gap: 6px; }
     }
   </style>
@@ -244,110 +220,66 @@
   </nav>
 
   <div class="city-hero">
-    <img src="assets/images/boston-charles.jpg" alt="Boston skyline from the Charles River">
+    <img src="assets/images/SF%20Gate.jpg" alt="San Francisco">
     <div class="city-hero-overlay">
-      <h1 class="city-title">Boston</h1>
-      <p class="city-subtitle">Two years, all four seasons, more cannolis than I should admit.</p>
+      <h1 class="city-title">San Francisco</h1>
+      <p class="city-subtitle">Home base. The city that spoiled me for every other food scene.</p>
     </div>
   </div>
 
   <div class="city-body">
 
-    <!-- Summer -->
-    <div class="season-block">
-      <span class="season-emoji">☀️</span>
-      <h2 class="season-heading">Rent kayaks on the Charles</h2>
-      <p>There is nothing better than being out on the water with the skyline right in front of you — especially in summer. Rent from Community Rowing or off the Esplanade. Go on a weekday if you can. Weekend crowds are real.</p>
+    <div class="feature-card">
+      <p class="feature-label">📚 Do not skip this</p>
+      <h2 class="feature-title">City Lights Bookstore</h2>
+      <p class="feature-body">I love this place. Genuinely one of my favorite spots in the city — three floors of independent bookstore energy, a legendary poetry room upstairs, and zero pressure to buy anything. The kind of place you wander into for 20 minutes and walk out two hours later.</p>
+      <span class="feature-detail">Open until 10pm · Every single day</span>
     </div>
 
-    <!-- Fenway -->
-    <div class="fenway-card">
-      <p class="fenway-label">⚾ Baseball Season</p>
-      <h2 class="fenway-title">How to do Fenway</h2>
-      <ol class="fenway-steps">
-        <li><span class="step-num">1</span> Drink outside first — the bars around Fenway are part of the experience</li>
-        <li><span class="step-num">2</span> Show up in the 3rd or 4th inning. Lines are gone, energy is already there</li>
-        <li><span class="step-num">3</span> Sing Sweet Caroline. Non-negotiable.</li>
-        <li><span class="step-num">4</span> Buy a hot dog</li>
-        <li><span class="step-num">5</span> Cheer whenever everyone else does — you'll figure it out</li>
-      </ol>
-    </div>
-
-    <!-- Winter -->
-    <div class="season-block">
-      <span class="season-emoji">❄️</span>
-      <h2 class="season-heading">Seaport winter fairs</h2>
-      <p>The Seaport goes all out in winter. The fairs are cozy, the lights are good, and it's one of those nights where being cold actually makes it feel more festive. Bundle up and go.</p>
-    </div>
-
-    <hr class="section-divider">
-    <p class="section-heading">🍽 Eat & Drink</p>
+    <p class="section-heading">🌉 Eat & Drink</p>
 
     <div class="food-list">
 
       <div class="food-entry">
         <div class="food-left">
-          <span class="food-name">Panza</span>
-          <span class="food-order">get the lobster ravioli</span>
+          <span class="food-name">Zante's Pizza</span>
+          <span class="food-order">curry pizza</span>
         </div>
-        <p class="food-note">Don't skip this one. The lobster ravioli is the reason you go.</p>
+        <p class="food-note">Yes, curry pizza. It sounds like it shouldn't work and it absolutely does. An SF original — don't leave without trying it.</p>
       </div>
 
       <div class="food-entry">
         <div class="food-left">
-          <span class="food-name">Lucca</span>
-          <span class="food-order">any pasta, honestly</span>
+          <span class="food-name">El Farolito</span>
+          <span class="food-order">burrito, obviously</span>
         </div>
-        <p class="food-note">Everything in the North End is good pasta, but Lucca is my personal pick. Walk the neighborhood after — it feels like a completely different city.</p>
+        <p class="food-note">A classic. You're in California — you better be getting a good burrito. This is the one.</p>
       </div>
 
       <div class="food-entry">
         <div class="food-left">
-          <span class="food-name">Mike's vs. Bova</span>
-          <span class="food-order">cannoli, obviously</span>
+          <span class="food-name">Any bakery</span>
+          <span class="food-order">get the dutch crunch</span>
         </div>
-        <p class="food-note">I've done the research. Mike's is the classic, but Bova wins on manageability — you can actually finish a whole one. Everyone I've taken has ended up loving Bova more. Take that how you will.</p>
+        <p class="food-note">Everyone talks about sourdough (and yes, get the sourdough), but dutch crunch is the real local secret. That crunchy, crackly roll is an SF thing and you will not find it anywhere else.</p>
       </div>
 
       <div class="food-entry">
         <div class="food-left">
-          <span class="food-name">Neptune Oyster</span>
-          <span class="food-order">oysters</span>
+          <span class="food-name">Local Edition</span>
+          <span class="food-order">the Eva Gardner</span>
         </div>
-        <p class="food-note">Best oysters in the city. Go when the weather's bad — the line gets long otherwise. Fair warning: everything else is fine but kind of overpriced.</p>
-      </div>
-
-      <div class="food-entry">
-        <div class="food-left">
-          <span class="food-name">Row 34</span>
-          <span class="food-order">lobster roll</span>
-        </div>
-        <p class="food-note">The lobster roll. Full stop.</p>
-      </div>
-
-      <div class="food-entry">
-        <div class="food-left">
-          <span class="food-name">Soju Bar</span>
-          <span class="food-order">go on a weekend</span>
-        </div>
-        <p class="food-note">Great vibe on a weekend night. It was the only real Asian scene I found while I was there, so take that with a grain of salt — but I always had a good time.</p>
-      </div>
-
-      <div class="food-entry">
-        <div class="food-left">
-          <span class="food-name">Parla + Drink</span>
-          <span class="food-order">cocktails</span>
-        </div>
-        <p class="food-note">Parla for a nice night out. Drink has no menu — they ask what you're in the mood for and make something. The whole experience is the point.</p>
+        <p class="food-note">Gorgeous newspaper-themed bar in the basement of an old Hearst building. Order the Eva Gardner. You're welcome.</p>
       </div>
 
     </div>
 
   </div>
 
-  <div style="max-width:860px;margin:0 auto;padding:0 24px 72px;display:flex;justify-content:space-between;">
+  <hr style="max-width:860px;margin:0 auto;border:none;border-top:1px solid var(--border);">
+  <div class="city-nav">
     <a href="index.html#more" class="city-back">← Back</a>
-    <a href="sf.html" class="city-back">San Francisco →</a>
+    <a href="boston.html" class="city-next">Boston →</a>
   </div>
 
   <footer class="footer">
